@@ -1,0 +1,24 @@
+#!/usr/bin/env sh
+
+DOTFILES="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# zsh
+ln -sf $DOTFILES/zshrc $HOME/.zshrc
+
+# pyenv
+ln -sf $DOTFILES/pyenvrc $HOME/.pyenvrc
+
+# tmux
+rm -rf $HOME/.tmux.conf
+ln -sf $DOTFILES/tmux/tmux.conf $HOME/.tmux.conf
+
+mkdir -p $HOME/.local/bin
+
+ln -sf $DOTFILES/tmux/t $HOME/.local/bin/t
+
+rm -rf $HOME/.config/nvim
+ln -s $DOTFILES/nvim $HOME/.config/nvim
+
+# luacheckrc
+rm -rf $HOME/.luacheckrc
+ln -s $DOTFILES/luacheckrc $HOME/.luacheckrc
