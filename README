@@ -1,12 +1,16 @@
-1. fonts
-    OperatorMono
+1. requirements:
+    1.0: fonts
+        1.0.1: OperatorMono for ascii 
+        1.0.2: brew install font-hack-nerd-font
+        1.0.3: https://www.nerdfonts.com/font-downloads download "hack nerd font" 
+                and setup for non-ascii in iterm2
+    2.0: on-my-zsh
 
 2. iterm2
     2.1: base16-google-light.itermcolors
     2.2: homebrew
-    2.3: brew install neovim tmux git wget
+    2.3: brew install neovim tmux git wget npm(for jsonls and yamlls)
     2.4:
-        brew tap homebrew/cask-fonts
         brew install font-hack-nerd-font
         (for neotree display)
 
