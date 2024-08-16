@@ -35,6 +35,8 @@ export LANG=en_US.UTF-8
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+#
+source ~/.alias
 
 export EDITOR='vim'
 

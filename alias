@@ -1,0 +1,4 @@
+alias gs="git status"
+alias gaa="git add ."
+alias glo="git log --oneline"
+alias gcm="git commit -m"

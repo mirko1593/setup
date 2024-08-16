@@ -12,6 +12,7 @@ return {
 
 		cmp.setup({
 			mapping = {
+				-- Super-Tab like mapping
 				["<Tab>"] = cmp.mapping(function(fallback)
 					-- print('tab...')
 					if cmp.visible() then

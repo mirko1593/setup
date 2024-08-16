@@ -8,7 +8,11 @@ return {
 
 		lint.linters_by_ft = {
 			-- already put a global luacheckrc file in home directory: ~/.luacheckrc
+			-- through luarocks
 			lua = { "luacheck" },
+
+			-- pip3 install ruff
+			python = { "ruff" },
 		}
 
 		local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })

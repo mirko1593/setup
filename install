@@ -2,6 +2,9 @@
 
 DOTFILES="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+# alias
+ln -sf $DOTFILES/alias $HOME/.alias
+
 # zsh
 ln -sf $DOTFILES/zshrc $HOME/.zshrc
 

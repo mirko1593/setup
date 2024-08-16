@@ -1,0 +1,26 @@
+1. fonts
+    OperatorMono
+
+2. iterm2
+    2.1: base16-google-light.itermcolors
+    2.2: homebrew
+    2.3: brew install neovim tmux git wget
+    2.4:
+        brew tap homebrew/cask-fonts
+        brew install font-hack-nerd-font
+        (for neotree display)
+
+3. lua(lua_ls for lsp, luacheck for lint, stylua for format)
+    3.0: both lua_ls and stylua are installed by mason in NeoVim 
+    3.1: luarocks: https://luarocks.org/#quick-start (for the familarity of luarocks)
+    3.2: luarocks install luacheck && luarocks install lanes
+
+4. python(pylsp for lsp, installed by mason, ruff for lint, ruff-format for format)
+    4.0: pyenv
+    4.1: pip3 install ruff(for lint)
+
+5. install
+    5.0: clone repository
+    5.1: chmod +x install && ./install
+
+

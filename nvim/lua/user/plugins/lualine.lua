@@ -12,7 +12,15 @@ return {
 		require("lualine").setup({
 			sections = {
 				lualine_a = { "mode" },
-				lualine_b = { "branch", "diff" },
+				lualine_b = {
+					"branch",
+					"diff",
+					function()
+						return "󰅭 " .. vim.pesc(tostring(#vim.tbl_keys(vim.lsp.buf_get_clients())) or "")
+					end,
+					{ "diagnostics", sources = { "nvim_diagnostic" } },
+					-- "diagnostics",
+				},
 				lualine_c = { "filename" },
 				-- lualine_x = { "encoding", "fileformat", "filetype" },
 				lualine_x = { "filetype" },
