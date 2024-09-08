@@ -26,7 +26,7 @@ vim.opt.splitbelow = true
 vim.opt.splitright = true
 -- complete the longest common match, and allow tabbing the results to fully complete.
 vim.opt.wildmode = "longest:full,full"
-vim.opt.completeopt = "menuone,longest,preview"
+vim.opt.completeopt = "longest"
 vim.opt.termguicolors = true
 --
 -- remove the ~ from end of buffer

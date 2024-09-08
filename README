@@ -6,13 +6,15 @@
                 and setup for non-ascii in iterm2
     2.0: on-my-zsh
 
-2. iterm2
+2. iterm2 & tmux
     2.1: base16-google-light.itermcolors
     2.2: homebrew
     2.3: brew install neovim tmux git wget npm(for jsonls and yamlls)
     2.4:
         brew install font-hack-nerd-font
         (for neotree display)
+        enable italic text
+    2.5: tic -x tmux/tmux-256color.terminfo  (setup tmux to enable italic text)
 
 3. lua(lua_ls for lsp, luacheck for lint, stylua for format)
     3.0: both lua_ls and stylua are installed by mason in NeoVim 
@@ -22,6 +24,10 @@
 4. python(pylsp for lsp, installed by mason, ruff for lint, ruff-format for format)
     4.0: pyenv
     4.1: pip3 install ruff(for lint)
+
+5. ruby(ruby-lsp for lsp, rubocop for ruby lint & format, erb-lint/erb-formatter for eruby lint/format)
+    5.1: rbenv & rbenv global 3.3.4
+    5.2: gem install rubocop erb_lint erb_format
 
 5. install
     5.0: clone repository

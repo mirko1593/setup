@@ -13,6 +13,12 @@ return {
 
 			-- pip3 install ruff
 			python = { "ruff" },
+
+			-- gem install rubocop
+			ruby = { "rubocop" },
+
+			-- gem install erb_lint
+			eruby = { "erb_lint" },
 		}
 
 		local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })

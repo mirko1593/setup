@@ -4,19 +4,21 @@ return {
 	config = function()
 		require("conform").setup({
 			formatters_by_ft = {
-				lua = { "stylua" },
 				-- pip3 install isort black
+				lua = { "stylua" },
+
+				-- pip3 install ruff
 				python = { "ruff_format" },
-				-- python = function(bufnr)
-				-- 	if require("conform").get_formatter_info("ruff_format", bufnr).available then
-				-- 		return { "black" }
-				-- 	else
-				-- 		return { "ruff_format" }
-				-- 	end
-				-- end,
+
+				-- gem install rubocop
+				ruby = { "rubocop" },
+
+				-- gem install erb-formatter
+				eruby = { "erb_format" },
 			},
+
 			format_on_save = {
-				timeout_ms = 500,
+				timeout_ms = 2000,
 				lsp_format = "fallback",
 			},
 		})

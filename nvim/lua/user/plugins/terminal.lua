@@ -5,7 +5,7 @@ return {
 		vim.g.floaterm_height = 0.4
 		vim.g.floaterm_wintype = "split"
 
-		vim.keymap.set("n", "<F1>", ":FloatermToggle<CR>")
-		vim.keymap.set("t", "<F1>", "<C-\\><C-n>:FloatermToggle<CR>")
+		vim.keymap.set("n", "<F8>", ":FloatermToggle<CR>")
+		vim.keymap.set("t", "<F8>", "<C-\\><C-n>:FloatermToggle<CR>")
 	end,
 }

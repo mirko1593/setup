@@ -6,7 +6,7 @@ return {
 		-- provide the SchemaStore catalog for use with jsonls and yamlls
 		"b0o/schemastore.nvim",
 	},
-	event = "VeryLazy",
+	event = "BufReadPre",
 	keys = {},
 	-- -- Keymaps
 	-- vim.keymap.set('n', '<Leader>d', '<cmd>lua vim.diagnostic.open_float()<CR>')
@@ -97,6 +97,16 @@ return {
 					validate = { enable = true },
 				},
 			},
+		})
+
+		require("lspconfig").ruby_lsp.setup({
+			capabilities = capabilities,
+			filetypes = { "ruby", "eruby" },
+		})
+
+		require("lspconfig").emmet_language_server.setup({
+			capabilities = capabilities,
+			filetypes = { "eruby", "html" },
 		})
 
 		-- require("lspconfig").yamlls.setup({

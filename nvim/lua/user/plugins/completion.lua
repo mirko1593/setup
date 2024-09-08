@@ -32,9 +32,13 @@ return {
 			},
 			sources = {
 				{ name = "nvim_lsp" },
-				{ name = "nvim_lsp_signature_help" },
+				-- { name = "nvim_lsp_signature_help" },
 				-- { name = 'copilot' },
-				{ name = "buffer" },
+				{ name = "buffer", option = {
+						get_bufnrs = function()
+							return vim.api.nvim_list_bufs()
+						end
+				} },
 				{ name = "path" },
 			},
 			experimental = {
