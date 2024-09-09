@@ -26,8 +26,9 @@
     4.1: pip3 install ruff(for lint)
 
 5. ruby(ruby-lsp for lsp, rubocop for ruby lint & format, erb-lint/erb-formatter for eruby lint/format)
-    5.1: rbenv & rbenv global 3.3.4
-    5.2: gem install rubocop erb_lint erb_format
+    5.0: brew install rbenv
+    5.1: rbenv install 3.3.4 & rbenv global 3.3.4
+    5.2: gem install rubocop erb_lint erb-formatter
 
 5. install
     5.0: clone repository
